@@ -476,3 +476,19 @@ function myFunctionPrcentaje19() {
   const pepe = (res.style.width = letras + "%");
   pepe.innerHTML;
 }
+
+
+//ingles
+
+function myFunctionPrcentajeIngles() {
+  var palabra = document.getElementById("porcIng").value;
+  var letras;
+  letras = palabra;
+  Number(letras);
+
+  const res = document.getElementById("barraIng");
+  /*  res.innerHTML = letras; */
+
+  const pepe = (res.style.width = letras + "%");
+  pepe.innerHTML;
+}
