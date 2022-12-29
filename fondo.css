@@ -27,3 +27,52 @@ body {
     height: 50px;
     margin-top: 30px;
   }
+
+
+  
+@media (max-width: 600px) {
+  /*  .about .box {
+     flex-direction: column;
+   }
+   .about .box .year_company {
+     margin-bottom: 5px;
+   } */
+
+   
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.fot{
+
+  padding: 0.5em 0;
+  text-align: center;
+  margin-top: auto;
+  margin-top: 100px ;
+}
+
+
+.aa{
+text-decoration: none;
+}
+
+.imagenMong{
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+}
+
+
+}
+ 
+ 
+ 
+ 
+ 
