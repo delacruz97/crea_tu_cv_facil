@@ -1,0 +1,29 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("./image/f1.jpg");
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+.fot{
+  
+    padding: 0.5em 0;
+    text-align: center;
+    margin-top: auto;
+    margin-top: 100px ;
+  }
+
+  
+  .aa{
+  text-decoration: none;
+  }
+
+  .imagenMong{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+  }

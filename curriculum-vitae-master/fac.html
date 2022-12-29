@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi-CV</title>
+    <!--Link para usar iconos-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"
+      integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="../script.js"></script>
+    <script src=".././prueba/script.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1 class="jaja">
+        Crea tu CV de una forma facil y sin tantas vueltas :D
+      </h1>
+    </div>
+    
+    <div class="formu">
+      <strong class="c">Ingrese los Datos para completar tu CV:</strong>
+      <br/>
+      <!-- Inputs class="inpuy" -->
+      <p class="inp"> NOMBRE:</p>
+      <div class="inp">
+        <input placeholder="Nombre"  class="inpuy" type="text" name="palabra" id="nombreP" />
+        <br />
+        <button class="btn"  onclick="myFunctionN()">listo</button>
+      </div>
+
+      <!-- <div class="inp">
+        <input placeholder=" Tu Foto"  class="inpuy" type="text" name="palabra" id="imagen" />
+        <br />
+        <button class="btn"  onclick="myFunctionImag()">listo</button>
+      </div> -->
+      <p class="inp"> FOTO:</p>
+      <div class="inp">
+      <input class="inpuyIma"  type="file" id="file" accept="image/*"  onchange="mostrar()"/>
+      </div>
+      <!-- <br>
+      <img id="img"/> --> 
+      <!-- //////// -->
+      <p class="inp"> DATOS DE CONTACTO:</p>
+      <div class="inp">
+        <input  placeholder="Telefono" class="inpuy" type="text" name="palabra" id="telefono" />
+        <br />
+        <button class="btn"  onclick="myFunctionTelefono()">listo</button>
+      </div>
+      <!-- ////////// -->
+      <div class="inp">
+        <input placeholder="Correo"  class="inpuy" type="text" name="palabra" id="correo" />
+        <br />
+        <button class="btn"  onclick="myFunctionCorreo()">listo</button>
+      </div>
+      <!-- /// -->
+      <div class="inp">
+        <input placeholder="Linkedin"  class="inpuy" type="text" name="palabra" id="linkedin" />
+        <br />
+        <button class="btn"  onclick="myFunctionLinkedin()">listo</button>
+      </div>
+
+      <!-- ///// -->
+      <div class="inp">
+        <input  placeholder="Provincia" class="inpuy" type="text" name="palabra" id="provincia" />
+        <br />
+        <button class="btn"  onclick="myFunctionProv()">listo</button>
+      </div>
+
+      <!-- EDUCACION -->
+      <p class="inp"> EDUCACION:</p>
+      <div class="inp">
+        <input placeholder="Fecha de comienzo "  class="inpuy" type="text" name="palabra" id="fecha" />
+        <br />
+        <button class="btn"  onclick="myFunctionFecha()">listo</button>
+      </div>
+
+      <div class="inp">
+        <input placeholder="Grado de estudio"  class="inpuy" type="text" name="palabra" id="instituto" />
+        <br />
+        <button class="btn"  onclick="myFunctionInstituto()">listo</button>
+      </div>
+      <div class="inp">
+        <input placeholder="Nombre Instituto"  class="inpuy" type="text" name="palabra" id="nombre" />
+        <br />
+        <button class="btn"  onclick="myFunctionNombre()">listo</button>
+      </div>
+      <p class="inp"> CURSOS:</p>
+      <!-- CURSOS -->
+      <div class="inp">
+        <input placeholder="Fecha de comienzo" class="inpuy" type="text" name="palabra" id="cursosF" />
+        <br />
+        <button class="btn"  onclick="myFunctionCursosFech()">listo</button>
+      </div>
+      <!-- CURSOSSSS -->
+      
+      <div class="inp">
+        <input placeholder="Nombre de Curso1" class="inpuy" type="text" name="palabra" id="cursosF1" />
+        <br />
+        <button class="btn"  onclick="myFunctionCursos1()">listo</button>
+      </div>
+      <div class="inp">
+        <input placeholder="Nombre de Curso2"  class="inpuy" type="text" name="palabra" id="cursosF2" />
+        <br />
+        <button  class="btn" onclick="myFunctionCursos2()">listo</button>
+      </div>
+      <div class="inp">
+        <input placeholder="Nombre de Curso3" class="inpuy" type="text" name="palabra" id="cursosF3" />
+        <br />
+        <button class="btn"  onclick="myFunctionCursos3()">listo</button>
+      </div>
+      <!-- ///// -->
+      <p class="inp"> QUIEN SOY:</p>
+      <div class="inp">
+        <textarea placeholder="Mi Perfil" class="btn"   type="text" name="palabra" id="perfil"></textarea>
+
+        <br />
+        <button class="btn"  onclick="myFunctionPerfil()">listo</button>
+      </div>
+      <p class="inp">EXPERIENCIA:</p>
+      <div class="inp">
+        <input placeholder="Fecha de comienzo"  class="inpuy" type="text" name="palabra" id="expF" />
+
+        <br />
+        <button class="btn"  onclick="myFunctionFechaExp()">listo</button>
+      </div>
+      <div class="inp">
+        <input placeholder="Experiencia en:" class="inpuy" type="text" name="palabra" id="expDes" />
+
+        <br />
+        <button class="btn"  onclick="myFunctionExperiencia()">listo</button>
+      </div>
+
+      <div class="inp">
+        <input  placeholder="Describi la experiencia :" class="inpuy" type="text" name="palabra" id="expDes1" />
+
+        <br />
+        <button class="btn"  onclick="myFunctionExperienciaL1()">listo</button>
+      </div>
+      <!-- /// -->
+      <div class="inp">
+        <input placeholder="Fecha de comienzo"  class="inpuy" type="text" name="palabra" id="expF2" />
+  
+        <br />
+        <button class="btn"  onclick="myFunctionFechaExp2()">listo</button>
+      </div>
+      <div class="inp">
+        <input placeholder="Experiencia en:"  class="inpuy" type="text" name="palabra" id="expDes2" />
+  
+        <br />
+        <button class="btn"  onclick="myFunctionExperiencia2()">listo</button>
+      </div>
+  
+      <div class="inp">
+        <input placeholder="Describi la experiencia :" class="inpuy" type="text" name="palabra" id="expDes12" />
+  
+        <br />
+        <button class="btn"  onclick="myFunctionExperienciaL12()">listo</button>
+      </div>
+      <!-- porcentaje -->
+      <p class="inp">Porcentaje en Comunicacion</p>
+      <div class="inp">
+        
+        <input placeholder="Porcentaje en numero"  class="inpuy" type="text" name="palabra" id="porc" />
+  
+        <br />
+        <button class="btn"  onclick="myFunctionPrcentaje()">listo</button>
+      </div>
+      <p class="inp">Porcentaje en Organizacion</p>
+
+      <div class="inp" >
+        <input placeholder="Porcentaje en numero" class="inpuy" type="text" name="palabra" id="porc2" />
+  
+        <br />
+        <button class="btn"  onclick="myFunctionPrcentaje2()">listo</button>
+      </div>
+      <p class="inp">Porcentaje en Destreza</p>
+
+      <div class="inp">
+        <input placeholder="Porcentaje en numero" class="inpuy" type="text" name="palabra" id="porc3" />
+  
+        <br />
+        <button class="btn"  onclick="myFunctionPrcentaje3()">listo</button>
+      </div>
+
+
+     
+      <strong class="c">Configuraciones Adicionales:</strong>
+      <div class="formu2">
+        
+        
+        <div class="inp">
+          
+          <input placeholder="Cambiar de color fronja"  class="inpuy" type="color" name="palabra" id="color" />
+          <br />
+          <button class="btn"  onclick="myFunctionColor()">color</button>
+        </div>
+        
+        
+      </div>
+    </div>
+
+    
+  </div>
+    
+    
+    <!-- --------------------- -->
+    <br />
+    <div>
+      <div class="container" id="pdff">
+        <div class="left_side" id="colorrr">
+          <div class="profileText">
+            <div class="imgBx">
+              <!-- <img
+                id="im"
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.564_viK6RC8wbzJT5DQtXwHaFj%26pid%3DApi&f=1&ipt=911707ff2adc1bbcc95c42d14a93941b51ad893bc4dd6c6b587b7534a8443670&ipo=images"
+                alt="profile picture"
+              /> -->
+              <img id="img"/> 
+            </div>
+            <!-- Nombre -->
+
+            <label id="pex"><h2>Juan peres</h2> </label>
+            <!-- .. -->
+          </div>
+          <div class="contactInfo">
+            <h3 class="title">Datos de contacto</h3>
+            <br />
+            <ul>
+              <li>
+                <span class="icon"
+                  ><i class="fa fa-phone" aria-hidden="true"></i
+                ></span>
+                <span class="text"
+                  ><a id="tel" name="tel" href="https://wa.me/qr/A5JDTGESFHNZI1"
+                    ><!-- telefono -->
+
+                    +54 9 36245566443
+                    <!-- .. --></a
+                  ></span
+                >
+              </li>
+              <li>
+                <span class="icon"
+                  ><i class="fa fa-envelope-o" aria-hidden="true"></i
+                ></span>
+                <span class="text"
+                  ><a id="corr" name="corr" href="https://mail.google.com/"
+                    >JuanPeres@gmail.com</a
+                  ></span
+                >
+              </li>
+
+              <li>
+                <span class="icon"
+                  ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                ></span>
+                <span class="text"
+                  ><a
+                    id="link"
+                    name="link"
+                    href="https://www.linkedin.com/in/maxi-b-3846bab0"
+                    >https://www.linkedin.com</a
+                  ></span
+                >
+              </li>
+              <li>
+                <span class="icon"
+                  ><i class="fa fa-map-marker" aria-hidden="true"></i
+                ></span>
+                <span class="text"
+                  >Argentina, <span class="text" id="prov">chaco </span></span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!--////////////////////-->
+          <br />
+          <div class="InfoEducation">
+            <h3 class="title">Educacion</h3>
+            <div>
+              <br />
+
+              <h5><span id="fech">2020</span> - Actual</h5>
+              <h4><span id="instituto0"> Universidad</span></h4>
+              <h4>
+                "<span id="nombre0">Universidad Nacional del nordeste</span>"
+              </h4>
+            </div>
+          </div>
+
+          <!-- ------------- -->
+          <div class="InfoEducation">
+            <h3 class="title">Cursos</h3>
+            <div>
+              <br />
+
+              <h5 id="curFecha">2020</h5>
+
+              <h4>*<span id="c1">informatica</span></h4>
+              <h4>*<span id="c2">Word</span></h4>
+              <h4>*<span id="c3">PawerPoint</span></h4>
+            </div>
+          </div>
+          <!--////////////////////-->
+          <div class="InfoLanguage">
+            <h3 class="title">Idiomas</h3>
+            <br />
+            <div>
+              <span class="text">English</span>
+              <span class="percent">
+                <div style="width: 45%"></div>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+        <div id="fon1" class="right_side">
+          <div class="about">
+            <h2 class="title2" id="colTEX" name="colTEX">Perfil</h2>
+            <br />
+            <p>
+              <b id="pe">
+                Soy una persona en constante aprendizaje, con ganas de superarme
+                dia a dia. Me considero dinamico, responsable y comunicativa, de
+                facil adaptacion con capacidad de trabajo en equipo e iniciativa
+                para resolver problemas. Quisiera conseguir la estabilidad
+                laboral en una empresa en la que pueda poner en practica mis
+                conocimiento, con el fin de conseguir las metas propuestas y
+                desempeñar mis funciones con eficiencia.
+              </b>
+            </p>
+          </div>
+
+          <div class="about">
+            <h2 class="title2" id="colTEX2" name="colTEX2">Experiencia</h2>
+            <div class="box"></div>
+
+            <div class="box">
+              <div class="year_company">
+                <br />
+                <h5 id="expFecha">2017-2019</h5>
+                <h5 id="objet">Atencion al cliente en MaxiKiosco "24HS"</h5>
+              </div>
+              <div class="text">
+                <h4></h4>
+                <p></p>
+                <p>
+                  <b id="exp1">
+                    Objetivo: Atender a diversar personas en buscas de
+                    diferentes tipos de alimentos y realizar su cobro.</b
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="year_company">
+                <br />
+                <h5 id="expFecha2">2019-2021</h5>
+                <h5 id="objet2">Atencion al cliente en Lenceria vane</h5>
+              </div>
+              <div class="text">
+                <h4></h4>
+                <p>
+                  <b id="exp12">Objetivo: Atender a diversos clientes en busca de
+                    diferentes producto en lenceria
+                  </b>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about skills">
+            <h2 class="title2" id="colTEX3" name="colTEX3">
+              Habilidades profesionales
+            </h2>
+            <br />
+
+            <div class="box">
+              <h5>Comunicacion Efectiva y Trabajo en equipo</h5>
+
+              <div class="percent">
+                <div id="barra1" style="width: 70%"></div>
+              </div>
+              <span style="font-size: 10px; margin-left: 5px"></span>
+            </div>
+            <div class="box">
+              <h5>Organizacion y Planificacion</h5>
+
+              <div class="percent">
+                <div id="barra2" style="width: 80%"></div>
+              </div>
+              <span style="font-size: 10px; margin-left: 5px"></span>
+            </div>
+
+            <div class="box">
+              <h5>Destreza en Informatica</h5>
+
+              <div class="percent">
+                <div id="barra3" style="width: 99%"></div>
+              </div>
+              <span style="font-size: 10px; margin-left: 5px"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="cc">
+        <strong 
+          >Presiona el siguiente botón para crear un PDF:</strong
+        >
+        <button id="btnCrearPdf" class="btn2">Click aquí</button>
+      </div>
+    </div>
+  </body>
+</html>
