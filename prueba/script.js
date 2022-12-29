@@ -112,6 +112,15 @@ function myFunctionColor() {
   const resT3 = document.getElementById("colTEX3");
   resT3.style.color = letras;
 
+  const barra1 = document.getElementById("barra1");
+  barra1.style.background = letras;
+
+  const barra2 = document.getElementById("barra2");
+  barra2.style.background = letras;
+
+  const barra3 = document.getElementById("barra3");
+  barra3.style.background = letras;
+
   const barra11 = document.getElementById("barra11");
   barra11.style.background = letras;
 
@@ -476,7 +485,6 @@ function myFunctionPrcentaje19() {
   const pepe = (res.style.width = letras + "%");
   pepe.innerHTML;
 }
-
 
 //ingles
 
