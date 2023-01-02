@@ -136,6 +136,12 @@ function myFunctionColor() {
   const barra15 = document.getElementById("barra15");
   barra15.style.background = letras;
 
+  const barra144 = document.getElementById("barra144");
+  barra144.style.background = letras;
+
+  const barra155 = document.getElementById("barra155");
+  barra155.style.background = letras;
+
   const barra16 = document.getElementById("barra16");
   barra16.style.background = letras;
 
@@ -149,19 +155,10 @@ function myFunctionColor() {
   barra19.style.background = letras;
   const barra20 = document.getElementById("barra20");
   barra20.style.background = letras;
+
+  const barra200 = document.getElementById("barra200");
+  barra200.style.background = letras;
 }
-
-
-
-
-
-
-
-
-
-
-  
-
 
 //provincia
 function myFunctionProv() {
@@ -226,30 +223,30 @@ function myFunctionCursosFech() {
 function myFunctionCursos1() {
   var palabra = document.getElementById("cursosF1").value;
   var letras;
-  letras = palabra.substr(0, 10);
+  letras = palabra.substr(0, 15);
 
   const res = document.getElementById("c1");
-  res.innerHTML = letras;
+  res.innerHTML = "_" + " " + letras;
   res.style.color = "#FFFF";
   res.style.fontWeight = "300";
 }
 function myFunctionCursos2() {
   var palabra = document.getElementById("cursosF2").value;
   var letras;
-  letras = palabra.substr(0, 10);
+  letras = palabra.substr(0, 15);
 
   const res = document.getElementById("c2");
-  res.innerHTML = letras;
+  res.innerHTML = "_" + " " + letras;
   res.style.color = "#FFFF";
   res.style.fontWeight = "300";
 }
 function myFunctionCursos3() {
   var palabra = document.getElementById("cursosF3").value;
   var letras;
-  letras = palabra.substr(0, 10);
+  letras = palabra.substr(0, 15);
 
   const res = document.getElementById("c3");
-  res.innerHTML = letras;
+  res.innerHTML = "_" + " " + letras;
   res.style.color = "#FFFF";
   res.style.fontWeight = "300";
 }
@@ -436,6 +433,20 @@ function myFunctionPrcentaje14() {
   const pepe = (res.style.width = letras + "%");
   pepe.innerHTML;
 }
+
+function myFunctionPrcentaje144() {
+  var palabra = document.getElementById("porc144").value;
+  var letras;
+  letras = palabra;
+  Number(letras);
+
+  const res = document.getElementById("barra144");
+  /*  res.innerHTML = letras; */
+
+  const pepe = (res.style.width = letras + "%");
+  pepe.innerHTML;
+}
+
 function myFunctionPrcentaje15() {
   var palabra = document.getElementById("porc15").value;
   var letras;
@@ -443,6 +454,19 @@ function myFunctionPrcentaje15() {
   Number(letras);
 
   const res = document.getElementById("barra15");
+  /*  res.innerHTML = letras; */
+
+  const pepe = (res.style.width = letras + "%");
+  pepe.innerHTML;
+}
+
+function myFunctionPrcentaje155() {
+  var palabra = document.getElementById("porc155").value;
+  var letras;
+  letras = palabra;
+  Number(letras);
+
+  const res = document.getElementById("barra155");
   /*  res.innerHTML = letras; */
 
   const pepe = (res.style.width = letras + "%");
@@ -492,6 +516,30 @@ function myFunctionPrcentaje19() {
   Number(letras);
 
   const res = document.getElementById("barra19");
+  /*  res.innerHTML = letras; */
+
+  const pepe = (res.style.width = letras + "%");
+  pepe.innerHTML;
+}
+function myFunctionPrcentaje20() {
+  var palabra = document.getElementById("porc20").value;
+  var letras;
+  letras = palabra;
+  Number(letras);
+
+  const res = document.getElementById("barra20");
+  /*  res.innerHTML = letras; */
+
+  const pepe = (res.style.width = letras + "%");
+  pepe.innerHTML;
+}
+function myFunctionPrcentaje200() {
+  var palabra = document.getElementById("porc200").value;
+  var letras;
+  letras = palabra;
+  Number(letras);
+
+  const res = document.getElementById("barra200");
   /*  res.innerHTML = letras; */
 
   const pepe = (res.style.width = letras + "%");
